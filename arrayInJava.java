@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class arrayInJava{
@@ -43,8 +44,22 @@ public class arrayInJava{
 
 
 
+		// Updating an array
+
+		numbers[0][0] = 9;
+		System.out.println(Arrays.deepToString(numbers));
+
+		// ArrayList is different from Array but does what you need 
+		
+		ArrayList<Integer> newNumbers = new ArrayList<Integer>();
+		newNumbers.add(numbers[0][0]);
+		newNumbers.add(12);
+		newNumbers.add(15);
 
 
+		newNumbers.set(1, 3);
+
+		System.out.println(newNumbers);
 
 
 
