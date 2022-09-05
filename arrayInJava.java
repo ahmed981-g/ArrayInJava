@@ -1,14 +1,51 @@
-import java.lang.System.Logger;
+import java.util.Arrays;
 
 public class arrayInJava{
 	public static void main(String[] args) {
-		int[] numbers = {1,2,3};
-		String[] userNames = {"Suman", "Sanam", "Rahul"};
+		String[] userList = {"Andy", "Rishab", "Mahesh"};
+		// Displaying Whole Array
 
-		for (int i : numbers) {
-			System.out.println("My "+i+" Hello to "+userNames[i-1]);
-			
+		System.out.println(Arrays.toString(userList));
+
+		// Selecting an Element
+
+		System.out.println(userList[0]);
+
+		// Looping through Array
+
+		for (String i : userList) {
+			System.out.println(i);
 		}
+
+		// Length of an Array
+		System.out.println(userList.length);
+
+		// MULTIDIMENSIONAL ARRAY
+
+		int[][] numbers = {
+			{1, 3, 5},
+			{2, 4, 6}
+		};
+		System.out.println("---------------------------");
+		System.out.println(numbers[0][0]);
+		System.out.println("---------------------------");
+
+		// Printing each element
+		for (int[] j : numbers) {
+			for (int k : j) {
+				System.out.print(k+" ");
+			}
+			System.out.println();
+		}
+		// Printing Array as String
+
+		System.out.println(Arrays.deepToString(numbers));
+
+
+
+
+
+
 
 
 
